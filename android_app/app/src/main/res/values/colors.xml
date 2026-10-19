@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Color Palette -->
+    <color name="primary">#0B57D0</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#D3E3FD</color>
+    <color name="on_primary_container">#041E49</color>
+
+    <color name="secondary">#00639B</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#C2E7FF</color>
+    <color name="on_secondary_container">#001D35</color>
+
+    <color name="surface">#F8F9FA</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="on_surface">#1F1F1F</color>
+    <color name="on_surface_variant">#444746</color>
+    <color name="outline">#747775</color>
+
+    <color name="success">#146C2E</color>
+    <color name="success_container">#C4EED0</color>
+    <color name="error">#BA1A1A</color>
+    <color name="error_container">#FFDAD6</color>
+</resources>

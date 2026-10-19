@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Remote Laptop Unlock</string>
+
+    <!-- UI Labels -->
+    <string name="title_configuration">Laptop Configuration</string>
+    <string name="label_laptop_ip">Laptop IP Address</string>
+    <string name="hint_laptop_ip">e.g. 192.168.1.100</string>
+    <string name="label_http_port">HTTP Port</string>
+    <string name="hint_http_port">5000</string>
+    <string name="label_secret_token">Secret Bearer Token</string>
+    <string name="hint_secret_token">Enter token from .env</string>
+    <string name="label_windows_pin">Windows Hello PIN / Password</string>
+    <string name="hint_windows_pin">e.g. 1234 (Optional if set in .env)</string>
+    <string name="btn_save_settings">Save Settings</string>
+
+    <string name="title_actions">Quick Actions</string>
+    <string name="btn_unlock_now">Unlock Laptop (Biometric)</string>
+    <string name="btn_lock_now">Lock Laptop</string>
+    <string name="btn_ping_agent">Ping Agent</string>
+
+    <string name="title_discovery">Automatic Boot Discovery</string>
+    <string name="switch_discovery_service">Background UDP Listener (Port 5005)</string>
+    <string name="desc_discovery_service">Listens for broadcast beacons when laptop powers on and notifies you immediately to unlock.</string>
+
+    <string name="title_branding">Made by specxy.net</string>
+    <string name="license_branding">License: specxy.net • All rights reserved</string>
+
+    <string name="title_status">System Status</string>
+    <string name="status_idle">Ready. Enter laptop credentials or enable background discovery.</string>
+    <string name="status_service_running">Discovery Service: ACTIVE (Listening on UDP 5005)</string>
+    <string name="status_service_stopped">Discovery Service: STOPPED</string>
+    <string name="status_authenticating">Verifying biometric credentials...</string>
+    <string name="status_unlocking">Sending unlock command to laptop...</string>
+    <string name="status_unlock_success">Unlock command sent! Typing PIN into Windows...</string>
+    <string name="status_lock_success">Lock command sent! Workstation locked successfully.</string>
+    <string name="status_error_connection">Could not connect to laptop. Verify IP, port, and Wi-Fi connection.</string>
+    <string name="status_error_auth">Authentication failed: Invalid Secret Token! Make sure the token matches windows_agent/.env (Default: change_this_to_a_secure_token_123456)</string>
+
+    <!-- Notification Strings -->
+    <string name="notif_channel_service_name">Background Discovery Service</string>
+    <string name="notif_channel_service_desc">Keeps the UDP beacon listener active to detect when the laptop powers on.</string>
+    <string name="notif_service_title">Laptop Discovery Active</string>
+    <string name="notif_service_text">Listening for laptop boot beacons on UDP 5005...</string>
+
+    <string name="notif_channel_alert_name">Laptop Boot Alerts</string>
+    <string name="notif_channel_alert_desc">High-priority heads-up alerts when laptop boots on the local network.</string>
+    <string name="notif_awake_title">Laptop Powered On</string>
+    <string name="notif_awake_text">Tap to unlock %1$s</string>
+    <string name="notif_action_unlock">Unlock Now</string>
+
+    <!-- Biometric Dialog Strings -->
+    <string name="biometric_title">Laptop Biometric Unlock</string>
+    <string name="biometric_subtitle">Scan your fingerprint to unlock Windows</string>
+    <string name="biometric_negative">Cancel</string>
+</resources>
